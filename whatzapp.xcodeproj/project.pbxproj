@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		ECD4FE2329E66A6E00B33D0A /* whatzappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE2229E66A6E00B33D0A /* whatzappApp.swift */; };
-		ECD4FE2529E66A6E00B33D0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE2429E66A6E00B33D0A /* ContentView.swift */; };
+		ECD4FE2529E66A6E00B33D0A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE2429E66A6E00B33D0A /* AuthView.swift */; };
 		ECD4FE2729E66A6F00B33D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD4FE2629E66A6F00B33D0A /* Assets.xcassets */; };
 		ECD4FE2A29E66A6F00B33D0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD4FE2929E66A6F00B33D0A /* Preview Assets.xcassets */; };
+		ECD4FE3129E66C0100B33D0A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD4FE3029E66C0100B33D0A /* GoogleService-Info.plist */; };
+		ECD4FE3429E66DCC00B33D0A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ECD4FE3329E66DCC00B33D0A /* FirebaseAuth */; };
+		ECD4FE3629E66DCC00B33D0A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ECD4FE3529E66DCC00B33D0A /* FirebaseFirestore */; };
+		ECD4FE3A29E688F000B33D0A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE3929E688F000B33D0A /* UserModel.swift */; };
+		ECD4FE3C29E6896600B33D0A /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE3B29E6896600B33D0A /* UserStore.swift */; };
+		ECD4FE3E29E7C94900B33D0A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE3D29E7C94900B33D0A /* ChatView.swift */; };
+		ECD4FE4029E7D0E000B33D0A /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE3F29E7D0E000B33D0A /* ChatModel.swift */; };
+		ECD4FE4229E80C7E00B33D0A /* ChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE4129E80C7E00B33D0A /* ChatStore.swift */; };
+		ECD4FE4429E828D000B33D0A /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4FE4329E828D000B33D0A /* ChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECD4FE1F29E66A6E00B33D0A /* whatzapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatzapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD4FE2229E66A6E00B33D0A /* whatzappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatzappApp.swift; sourceTree = "<group>"; };
-		ECD4FE2429E66A6E00B33D0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECD4FE2429E66A6E00B33D0A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		ECD4FE2629E66A6F00B33D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD4FE2929E66A6F00B33D0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECD4FE3029E66C0100B33D0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECD4FE3929E688F000B33D0A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		ECD4FE3B29E6896600B33D0A /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		ECD4FE3D29E7C94900B33D0A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		ECD4FE3F29E7D0E000B33D0A /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		ECD4FE4129E80C7E00B33D0A /* ChatStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStore.swift; sourceTree = "<group>"; };
+		ECD4FE4329E828D000B33D0A /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +42,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD4FE3429E66DCC00B33D0A /* FirebaseAuth in Frameworks */,
+				ECD4FE3629E66DCC00B33D0A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC393E762A27FB2A00ABA776 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECD4FE3929E688F000B33D0A /* UserModel.swift */,
+				ECD4FE3F29E7D0E000B33D0A /* ChatModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC393E772A27FBB900ABA776 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				ECD4FE3B29E6896600B33D0A /* UserStore.swift */,
+				ECD4FE4129E80C7E00B33D0A /* ChatStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		EC393E782A27FC4200ABA776 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				ECD4FE3D29E7C94900B33D0A /* ChatView.swift */,
+				ECD4FE4329E828D000B33D0A /* ChatRow.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		EC393E792A27FC4C00ABA776 /* Auth&UserPage */ = {
+			isa = PBXGroup;
+			children = (
+				ECD4FE2429E66A6E00B33D0A /* AuthView.swift */,
+			);
+			path = "Auth&UserPage";
+			sourceTree = "<group>";
+		};
 		ECD4FE1629E66A6E00B33D0A = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				ECD4FE2229E66A6E00B33D0A /* whatzappApp.swift */,
-				ECD4FE2429E66A6E00B33D0A /* ContentView.swift */,
+				EC393E792A27FC4C00ABA776 /* Auth&UserPage */,
+				EC393E762A27FB2A00ABA776 /* Models */,
+				EC393E772A27FBB900ABA776 /* Stores */,
+				EC393E782A27FC4200ABA776 /* ChatView */,
 				ECD4FE2629E66A6F00B33D0A /* Assets.xcassets */,
+				ECD4FE3029E66C0100B33D0A /* GoogleService-Info.plist */,
 				ECD4FE2829E66A6F00B33D0A /* Preview Content */,
 			);
 			path = whatzapp;
@@ -83,6 +140,10 @@
 			dependencies = (
 			);
 			name = whatzapp;
+			packageProductDependencies = (
+				ECD4FE3329E66DCC00B33D0A /* FirebaseAuth */,
+				ECD4FE3529E66DCC00B33D0A /* FirebaseFirestore */,
+			);
 			productName = whatzapp;
 			productReference = ECD4FE1F29E66A6E00B33D0A /* whatzapp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +172,9 @@
 				Base,
 			);
 			mainGroup = ECD4FE1629E66A6E00B33D0A;
+			packageReferences = (
+				ECD4FE3229E66DCC00B33D0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = ECD4FE2029E66A6E00B33D0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +191,7 @@
 			files = (
 				ECD4FE2A29E66A6F00B33D0A /* Preview Assets.xcassets in Resources */,
 				ECD4FE2729E66A6F00B33D0A /* Assets.xcassets in Resources */,
+				ECD4FE3129E66C0100B33D0A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD4FE2529E66A6E00B33D0A /* ContentView.swift in Sources */,
+				ECD4FE2529E66A6E00B33D0A /* AuthView.swift in Sources */,
+				ECD4FE3C29E6896600B33D0A /* UserStore.swift in Sources */,
+				ECD4FE4029E7D0E000B33D0A /* ChatModel.swift in Sources */,
+				ECD4FE4429E828D000B33D0A /* ChatRow.swift in Sources */,
+				ECD4FE3A29E688F000B33D0A /* UserModel.swift in Sources */,
+				ECD4FE3E29E7C94900B33D0A /* ChatView.swift in Sources */,
 				ECD4FE2329E66A6E00B33D0A /* whatzappApp.swift in Sources */,
+				ECD4FE4229E80C7E00B33D0A /* ChatStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +410,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECD4FE3229E66DCC00B33D0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECD4FE3329E66DCC00B33D0A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECD4FE3229E66DCC00B33D0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ECD4FE3529E66DCC00B33D0A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECD4FE3229E66DCC00B33D0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECD4FE1729E66A6E00B33D0A /* Project object */;
 }
